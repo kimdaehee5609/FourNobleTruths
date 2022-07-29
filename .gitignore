@@ -1,0 +1,16 @@
+*.aux
+*.fls
+*.log
+*.maf
+*.ptc*
+*.mtc*
+*.out
+*.toc
+*.lot
+*.gz
+*.idx
+*.lof
+*.nav
+*.snm
+*.plt*
+*.plf*
