@@ -12,5 +12,7 @@
 *.lof
 *.nav
 *.snm
-*.plt*
-*.plf*
+*.ps
+*.dvi
+*.vrb
+*.bbl
