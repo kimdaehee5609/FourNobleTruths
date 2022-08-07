@@ -158,29 +158,66 @@
 %				minimum size=3cm,
 				text width=6em, 
 				concept color=black!80,
-				level 1/.style={level distance=5.5cm,sibling angle=45},
-				level 2/.style={level distance=8.0cm,sibling angle=30},
-				level 3/.style={level distance=5.0cm,sibling angle=45},
-				level 4/.style={level distance=5.0cm,sibling angle=45},
+				level 1/.style={level distance=5.5cm,sibling angle=90},  %찰나삼매
+				level 2/.style={level distance=4.0cm,sibling angle=30},  %삼매 설명
+				level 3/.style={level distance=4.0cm,sibling angle=40},  %색계선정
+%				level 4/.style={level distance=5.0cm,sibling angle=30},  %색계초선
+%				level 5/.style={level distance=5.0cm,sibling angle=30},
 %				every annotation/.style={text width=20em, align=left}]
 				concept/.append style={fill={none}} 
 				]
 				\node 	[concept] 				{바름 삼매}
-						[clockwise from=45, every concept/.style={minimum size=3cm}]
+						[clockwise from=00, every concept/.style={minimum size=3cm}]
 				child	{					node[concept] 	{찰나 삼매}
-						[clockwise from=00]
+						[clockwise from=-90]
 						child	{		node [annotation] {특정한 대상에만 집중하는 것이 아니라 현재 일어나는  대상에 순간 순간 집중하는 삼매를 말한다 }
 							}
 					}
 				child	{	node[concept] 	{근접 삼매}
-						[clockwise from=00]
+						[clockwise from=-90]
 						child	{		node [annotation] {몰입 삼매에 들러가기 직전이나 직후의 마음 상태를 말한다}
 							}
 					}
-				child	{	node[concept] 	{몰입 삼매}
-						[clockwise from=00]
+				child	{				node[concept] 	{몰입 삼매}
+									[clockwise from=180]
 						child	{		node [annotation] {오직 하나의 대상만을 기억하여 알아차림으로써 마음이 하나의 대상에 완전히 몰입된 삼매를 말한다 }
 							}
+%									[clockwise from=45]
+							child	{	node[concept] 	{색계선정}
+%									[clockwise from=90]
+%							child		[grow=45, level distance=8.0cm ]{ node[concept] {초기 균열	}}  
+%							child		[grow=25, level distance=8.0cm ]{ node[concept] {침하수축균열	}}    
+%							child		[grow=00, level distance=8.0cm ]{ node[concept] {소성수축균열	}}   
+%							child		[grow=-25, level distance=8.0cm ]{ node[concept] {침하균열	}} 
+%							child		[level distance=8.0cm ]{ node[concept] {초기 균열	}}  
+%							child		[level distance=8.0cm ]{ node[concept] {침하수축균열	}}    
+%							child		[level distance=8.0cm ]{ node[concept] {소성수축균열	}}   
+%							child		[level distance=8.0cm ]{ node[concept] {침하균열	}} 
+							child		{ node[concept] {색계 초선}}  
+							child		{ node[concept] {색계 이선}}    
+							child		{ node[concept] {색계 삼선}}   
+							child		{ node[concept] {색계 사선}} 
+%							child		{ node {색계 초선}}  
+%							child		{ node {색계 이선}}    
+%							child		{ node {색계 삼선}}   
+%							child		{ node {색계 사선}} 
+								}
+%									[clockwise from=-45]
+							child	{	node[concept] 	{무색계선정}
+%									[clockwise from=45]
+%							child		[grow=45, level distance=8.0cm ]{ node[concept] {초기 균열	}}  
+%							child		[grow=25, level distance=8.0cm ]{ node[concept] {침하수축균열	}}    
+%							child		[grow=00, level distance=8.0cm ]{ node[concept] {소성수축균열	}}   
+%							child		[grow=-25, level distance=8.0cm ]{ node[concept] {침하균열	}} 
+%							child		[level distance=8.0cm ]{ node[concept] {초기 균열	}}  
+%							child		[level distance=8.0cm ]{ node[concept] {침하수축균열	}}    
+%							child		[level distance=8.0cm ]{ node[concept] {소성수축균열	}}   
+%							child		[level distance=8.0cm ]{ node[concept] {침하균열	}} 
+							child		{ node[concept] {공무변처}}  
+							child		{ node[concept] {식무변처}}    
+							child		{ node[concept] {무소변처}}   
+							child		{ node[concept] {비상비비상처}} 
+								}
 					};
 		\end{center}
 
@@ -196,7 +233,7 @@
 		\tikz[	mindmap,
 				grow cyclic,
 				text width=6em, 
-				concept color=black!80,
+				concept color=black!10,
 				level 1/.style={level distance=3.0cm,minimum size=3cm,},
 				level 2/.style={level distance=3.0cm,minimum size=2cm,},
 				level 3/.style={level distance=3.0cm,minimum size=2cm,},
@@ -229,27 +266,27 @@
 				child	[grow=-10, level distance=7.0cm ]	
 				{					node[concept] 	{네트워크}
 					child 				[grow=30, level distance=6.0cm ]
-					{				node[concept] 	{LF2.5G}
+					{				node[concept] 	{색계 선정}
 						child			[grow=00, level distance=4.0cm ]
-						{			node[concept] 	{h0103839\\5609}
-							child		[grow=00, level distance=4.0cm ]
-							{		node[concept] 	{!김대희\\38395609}} 
-						} 
-					}
-					child 				[grow=00, level distance=5.0cm ]
-					{				node[concept] 	{청출2.4G}
+						{			node[concept] 	{색계 초선}} 
 						child			[grow=00, level distance=4.0cm ]
-						{			node[concept] 	{\$ lf 5658 0000}
-						} 
+						{			node[concept] 	{색계 초선}} 
 					}
-					child				[grow=-30, level distance=6.0cm ]
-					{				node[concept] 	{LFNAS}
-						child			[grow=00, level distance=4.0cm ]
-						{			node[concept] 	{admin}
-							child		[grow=00, level distance=4.0cm ]
-							{		node[concept] 	{lf 0000}} 
-						} 
+					child 				[grow=00, level distance=4.0cm ]
+					{				node[concept] 	{무색계 선정}
+						child 			[grow=45, level distance=8.0cm ]{ node[concept] {초기 균열	}}  
+						child 			[grow=25, level distance=8.0cm ]{ node[concept] {침하수축균열	}}    
+						child 			[grow=00, level distance=8.0cm ]{ node[concept] {소성수축균열	}}   
+						child 			[grow=-25, level distance=8.0cm ]{ node[concept] {침하균열	}} 
 					}
+%					child				[grow=-30, level distance=6.0cm ]
+%					{				node[concept] 	{LFNAS}
+%						child			[grow=00, level distance=4.0cm ]
+%						{			node[concept] 	{admin}
+%							child		[grow=00, level distance=4.0cm ]
+%							{		node[concept] 	{lf 0000}} 
+%						} 
+%					}
 				}
 				child	[grow=-90, level distance=7.0cm ]	
 				{					node[concept] 	{web hard}
@@ -265,18 +302,19 @@
 	
 		\begin{center}
 		\begin{tikzpicture}[	mindmap,
-					    every node/.style=concept,
-					    concept color=black!10,
-					    grow cyclic,
+					    	every node/.style=concept,
+					    	concept color=black!10,
+						concept/.append style={fill={none}},
+						grow cyclic,
 %					    level 1/.append style={level distance=4.0cm,sibling angle=360},
 					    level 1/.append style={level distance=6.0cm},
 					    level 2/.append style={level distance=6.5cm}
 					    level 3/.append style={level distance=6.5cm}
 					    ]
-		  \node 	[root concept] 					{	콘크리트의 성질 } % root
+		  \node 	[root concept] 					{	삼매 } % root
 				[clockwise from=0]
 				%
-			    	child 	[level distance=12cm , grow=0]	{ node {굳지 않은 콘크리트}
+			    	child 	[level distance=12cm , grow=0]	{ node {찰나 삼매}
 					[clockwise from=0]
 					child		[level distance=6cm]	{ node {공기량} 
 						child 					{ node {여기가 어디 2} }  
@@ -296,22 +334,22 @@
 						child 					{ node {소성수축균열	} }   
 						child 					{ node {침하균열	} } } }
 				%
-			    	child [grow=180 ]			 	{ node {굳은 콘크리트}
-					[clockwise from=90]
+			    	child [grow=-90 ]			 	{ node {근접 삼매}
+					[clockwise from=0]
 					child 						{ node {여기가 어디 1} } 
 					child 						{ node {여기가 어디 2} }  }
 				%				
-				child 		[grow=210,level distance=12cm]	{ node [concept]{콘크리트의\\체적 변화}
-					child 	[grow=90]					{ node [concept]{Turing Machines} }
-					child 							{ node [concept]{Random-Access Machines} }
-					child 							{ node [concept]{Random-Access Machines} }
-					child 							{ node [concept]{Random-Access Machines} } }
-				%				
-				child [grow=240]				 	{ node [concept]{콘크리트의\\강도특성}
-					child 						{ node [concept]{Turing Machines} }
-					child 						{ node [concept]{Random-Access Machines} }
-					child 						{ node [concept]{Random-Access Machines} }
-					child 						{ node [concept]{Random-Access Machines} }  };
+				child [grow=180]				 	{ node [concept]{몰입 삼매}
+					child 	[grow=90]					{ node [concept]{색계 선정} 
+						child 					{ node [concept]{색계 초선} } 	
+						child 					{ node [concept]{색계 이선} } 	
+						child 					{ node [concept]{색계 삼선} } 	
+						child 					{ node [concept]{색계 사선} } }
+					child 	[grow=-90]			{ node [concept]{무색계 선정} 
+						child 					{ node [concept]{색계 초선} } 	
+						child 					{ node [concept]{색계 이선} } 	
+						child 					{ node [concept]{색계 삼선} } 	
+						child 					{ node [concept]{색계 사선} } } };
 		\end{tikzpicture}
 		\end{center}
 
